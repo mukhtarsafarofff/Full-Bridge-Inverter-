@@ -6,4 +6,5 @@ The following design shows the standard module which may be integrated to any or
 5) This results in a doubling effect and enables a raised 2X voltage at the gate of the relevant mosfet.
 6) This condition instantly hard triggers the mosfet into conduction, which pushes the voltage across the corresponding opposite low side mosfet.
 7) During this situation the capacitor is forced to discharge quickly and the mosfet is able to conduct only for so long the stored charge of this capacitor is able to sustain.
+The value of the capacitor is selected such that the capacitor is able to adequately hold the charge for each ON/OFF period of the push pull oscillations.
 
