@@ -4,4 +4,5 @@ The following design shows the standard module which may be integrated to any or
 3) Now as soon as the logic across the SG3525 reverts with the subsequent oscillating cycle, the pin#11 goes low, which instantly switches OFF the associated BC547.
 4) With BC547 switched OFF, the supply voltage at the cathode of the 1N007 now reaches the gate of the connected mosfet, however this voltage is now reinforced with the stored voltage inside capacitor which is also almost equal to the supply level.
 5) This results in a doubling effect and enables a raised 2X voltage at the gate of the relevant mosfet.
+6) This condition instantly hard triggers the mosfet into conduction, which pushes the voltage across the corresponding opposite low side mosfet.
 
