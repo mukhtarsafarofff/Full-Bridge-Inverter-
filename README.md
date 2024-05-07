@@ -1,0 +1,1 @@
+The following design shows the standard module which may be integrated to any ordinary SG3525 inverter across the output pins of the IC for accomplishing a highly efficient SG3525 full bridge or H-bridge inverter circuit.
