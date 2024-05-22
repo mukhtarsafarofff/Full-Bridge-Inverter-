@@ -12,4 +12,5 @@ Das folgende Design zeigt das Standardmodul, das in jeden gewöhnlichen SG3525-W
 1) Der 100uF-Kondensator lädt sich über die 1N4007-Diode und den mit seinem negativen Anschluss verbundenen Low-Side-MOSFET auf.
 2) Diese Ladung wird vorübergehend im Kondensator gespeichert und kann als gleich der Versorgungsspannung angenommen werden.
 3) Sobald die Logik des SG3525 im nächsten Oszillationszyklus umschaltet, geht Pin#11 auf Low, was den zugehörigen BC547 sofort ausschaltet.
+4) Mit ausgeschaltetem BC547 erreicht die Versorgungsspannung an der Kathode der 1N4007 nun das Gate des angeschlossenen MOSFETs, jedoch wird diese Spannung jetzt durch die im Kondensator gespeicherte Spannung verstärkt, die ebenfalls nahezu der Versorgungsspannung entspricht.
 
