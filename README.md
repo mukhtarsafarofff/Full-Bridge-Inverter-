@@ -15,4 +15,5 @@ Das folgende Design zeigt das Standardmodul, das in jeden gewöhnlichen SG3525-W
 4) Mit ausgeschaltetem BC547 erreicht die Versorgungsspannung an der Kathode der 1N4007 nun das Gate des angeschlossenen MOSFETs, jedoch wird diese Spannung jetzt durch die im Kondensator gespeicherte Spannung verstärkt, die ebenfalls nahezu der Versorgungsspannung entspricht.
 5) Dies führt zu einem Dopplungseffekt und ermöglicht eine erhöhte 2X-Spannung am Gate des entsprechenden MOSFETs.
 6) Diese Bedingung schaltet den MOSFET sofort hart ein, was die Spannung über den entsprechenden gegenüberliegenden Low-Side-MOSFET drückt.
+7) In dieser Situation wird der Kondensator gezwungen, sich schnell zu entladen, und der MOSFET kann nur so lange leiten, wie die gespeicherte Ladung dieses Kondensators ausreicht
 
