@@ -9,4 +9,5 @@ The following design shows the standard module which may be integrated to any or
 The value of the capacitor is selected such that the capacitor is able to adequately hold the charge for each ON/OFF period of the push pull oscillations.
 
 Das folgende Design zeigt das Standardmodul, das in jeden gewöhnlichen SG3525-Wechselrichter über die Ausgangspins des ICs integriert werden kann, um einen hocheffizienten SG3525-Vollbrücken- oder H-Brücken-Wechselrichter zu realisieren. Mit Bezug auf das obige Diagramm habe ich die vier MOSFETs identifiziert, die als H-Brücke oder Vollbrücken-Netzwerk verschaltet sind. Ich weiß, dass in jeder H-Brücke die MOSFETs diagonal geschaltet sind, um die beabsichtigte Gegentaktleitung über den Transformator oder die angeschlossene Last zu implementieren. Dies impliziert, dass Pin#11 des ICs in diesem Moment auf High ist, was den linken BC547-Schalter eingeschaltet hält.  In dieser Situation geschehen die folgenden Dinge innerhalb der linken BC547-Stufe:
+1) Der 100uF-Kondensator lädt sich über die 1N4007-Diode und den mit seinem negativen Anschluss verbundenen Low-Side-MOSFET auf.
 
