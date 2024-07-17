@@ -6,7 +6,7 @@
 5) This results in a doubling effect and enables a raised 2X voltage at the gate of the relevant mosfet.
 6) This condition instantly hard triggers the mosfet into conduction, which pushes the voltage across the corresponding opposite low side mosfet.
 7) During this situation the capacitor is forced to discharge quickly and the mosfet is able to conduct only for so long the stored charge of this capacitor is able to sustain.
-The value of the capacitor is selected such that the capacitor is able to adequately hold the charge for each ON/OFF period of the push pull oscillations.
+8) The value of the capacitor is selected such that the capacitor is able to adequately hold the charge for each ON/OFF period of the push pull oscillations.
 
 (DEU) Das folgende Design zeigt das Standardmodul, das in jeden gewöhnlichen SG3525-Wechselrichter über die Ausgangspins des ICs integriert werden kann, um einen hocheffizienten SG3525-Vollbrücken- oder H-Brücken-Wechselrichter zu realisieren. Mit Bezug auf das obige Diagramm habe ich die vier MOSFETs identifiziert, die als H-Brücke oder Vollbrücken-Netzwerk verschaltet sind. Ich weiß, dass in jeder H-Brücke die MOSFETs diagonal geschaltet sind, um die beabsichtigte Gegentaktleitung über den Transformator oder die angeschlossene Last zu implementieren. Dies impliziert, dass Pin#11 des ICs in diesem Moment auf High ist, was den linken BC547-Schalter eingeschaltet hält.  In dieser Situation geschehen die folgenden Dinge innerhalb der linken BC547-Stufe:
 1) Der 100uF-Kondensator lädt sich über die 1N4007-Diode und den mit seinem negativen Anschluss verbundenen Low-Side-MOSFET auf.
