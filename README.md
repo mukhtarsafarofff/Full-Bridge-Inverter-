@@ -5,8 +5,8 @@
 4) With BC547 switched OFF, the supply voltage at the cathode of the 1N007 now reaches the gate of the connected mosfet, however this voltage is now reinforced with the stored voltage inside capacitor which is also almost equal to the supply level.
 5) This results in a doubling effect and enables a raised 2X voltage at the gate of the relevant mosfet.
 6) This condition instantly hard triggers the mosfet into conduction, which pushes the voltage across the corresponding opposite low side mosfet.
-
-
+7) During this situation the capacitor is forced to discharge quickly and the mosfet is able to conduct only for so long the stored charge of this capacitor is able to sustain.
+8) The value of the capacitor is selected such that the capacitor is able to adequately hold the charge for each ON/OFF period of the push pull oscillations.
 
 
 
